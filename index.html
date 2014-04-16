@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="indexPage" data-theme="b">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Students Contact</h1>
+      </div>
+      <div data-role="content" data-transition="slide" class="ui-content" align="center">       
+        <article class="box">
+        <div id="swipeRegion">
+        <span id="div1" style="font-weight:bold; color:white">&larr;Swipe For Computer Students &rarr;<br><br>Student <span id='c'>0</span> of <span id='m'>0</span></span>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Last Name</strong>
+                        <td><input id="lastName" readonly size="20">  
+                    <tr>
+                        <td><strong>First Name</strong>
+                        <td><input id="firstName" readonly size="20">               
+                    <tr>
+                        <td>Home Email
+                        <td><input id="homeMail" readonly size="20">
+                    <tr>
+                        <td>Cell Phone
+                        <td><input id="cellPhone" readonly size="20">
+                </tbody>
+            </table>
+
+            <img id="rs" src="img/rs.png" width="30" height="30" style="cursor: pointer;">
+             &nbsp;&nbsp;&nbsp;
+            <img id="r" src="img/b.png" width="30" height="30" style="cursor: pointer;">
+            
+            <span style="font-weight:bold; color:white"><strong>
+                <span id='matchIndex' >0</span> of <span id='matchCount' style="color: orange;">0</span>
+                <span>&nbsp;</span>
+                <span id="sp"  >matches</span>
+            </strong></span>
+            
+            <img id="f" src="img/f.png" width="30" height="30" style="cursor: pointer;">
+            &nbsp;&nbsp;&nbsp;
+            <img id="fs" src="img/fs.png" width="30" height="30" style="cursor: pointer;">
+        <strong>
+        <br><span style="color: white">Search:&nbsp;</span>
+        <input id="match" type="text">
+        </strong>
+        </div> <!-- end of swipe region  -->
+        <button id="btnClear">&nbsp;Clear Search</button>
+    </article>
+
+      </div>
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <h1>Welcome to Students Contact List</h1>
+      </div>
+    </div>
+
+</body>
+
+    <script src="js/o.js"></script>
+    <script src="js/StudentLookup.js"></script>
+</html>
