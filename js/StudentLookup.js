@@ -1,6 +1,6 @@
 $(document).ready(function(){
   //==============DATA=======================
-  var infoFields = ["lastName","firstName","homeMail","schoolMail","homePhone","cellPhone" ]
+  var infoFields = ["lastName","firstName","homeMail","cellPhone" ]
   var ajax = new HttpObject()
   , records = []
   , recordCount = 0
